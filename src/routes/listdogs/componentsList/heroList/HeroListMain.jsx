@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './HeroListStyles.css'
 import {Link} from 'react-router-dom'
-
 import Video from '../../../home/components/assets/back3.mp4'
 
 
@@ -25,23 +24,23 @@ function HeroListMain({setDog}) {
 
     let listContent = dogList.map((dog)=> {
       var sex = ""
-      if(dog.sex === "female") {
+      if(dog.sex === "Female") {
           sex = "\u2640"
       } else {
           sex = "\u2642"
       }
 
-      let present = "not present";
+      let present = "Not present";
       let presentIcon = "\u2715"
       if(dog.present) {
-          present = "present"
+          present = "Present"
           presentIcon = "\u2713"
       }
 
 
       return ([
           
-          <Link className="link" to="/dog-info">
+          <Link className="link" to="/listdogs/dogInformation">
               <div key={dog.chipnumber} className="card" onClick={() => setDog(dog)}>
                   <img  src={dog.img} alt="dog"></img>
               

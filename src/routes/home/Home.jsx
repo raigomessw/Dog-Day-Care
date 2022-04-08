@@ -7,7 +7,7 @@ import {Link} from 'react-scroll/'
 
 const Home = () => {
   return (
-    <Link to='/'>
+    <Link to='/home'>
     <div>
      <Navbar / >
      <Hero / >

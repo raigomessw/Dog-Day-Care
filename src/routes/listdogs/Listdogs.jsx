@@ -1,15 +1,14 @@
 import React from 'react'
 import NavbarList from './componentsList/navBarList/NavbarList'
-import FooterList from './componentsList/footerList/FooterList'
-import HeroList from './componentsList/heroList/HeroListMain'
+import HeroListMain from './componentsList/heroList/HeroListMain'
 
 
-const Listdogs = () => {
+const Listdogs = ({setDog}) => {
   return (
     <div>
       <NavbarList />
-       <HeroList />
-       {/*<FooterList />*/}
+       <HeroListMain />
+       
 
     </div>
   )
