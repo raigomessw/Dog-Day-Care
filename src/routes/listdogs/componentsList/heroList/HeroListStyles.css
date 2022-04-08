@@ -1,0 +1,104 @@
+.hero-list {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    color: #fff;
+    align-items: center;
+}
+
+.overlay-list {
+    background-color: rgba(0, 0, 0, 0.349);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title2 {
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title2 h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.content-list {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 1 auto;
+    padding: 1rem;
+    grid-template-columns: repeat(4, minmax(200px, 2fr));
+}
+
+.container-lista {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 2fr));
+    grid-gap: 1rem;
+    box-sizing: border-box;
+    overflow-y: none;
+    color: black;
+}
+
+.card {
+    background-color: var(--secundary-white);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+    transition: .5s;
+    text-align: center;
+    position: relative;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 0 auto;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 940px) {
+    .container-lista,
+    .content-list {
+        display: grid;
+        top: 35vh;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+    .card {
+        background-color: var(--secundary-white);
+        border-radius: 1rem;
+        padding: 0.8rem;
+        margin-bottom: 10px;
+        box-shadow: 0 5px 5px rgb(102, 70, 31);
+        transition: .5s;
+        text-align: center;
+        position: flex;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
