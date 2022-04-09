@@ -47,7 +47,9 @@ function Navbar() {
 
           <div className="mobile-menu-botton">
               <div className="menu-icons">
-              <button className="button">Våra Gänget!</button> 
+              <Link to="/listdogs" >
+                <button>Våra Gänget!</button> 
+               </Link>
               </div>
 
               <div className="social-icons">

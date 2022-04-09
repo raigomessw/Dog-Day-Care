@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './HeroListStyles.css'
-import {Link} from 'react-router-dom'
-
+import {Link } from "react-router-dom";
 import Video from '../../../home/components/assets/back3.mp4'
+
 
 
 
@@ -12,16 +12,32 @@ function HeroListMain({setDog}) {
 
   const [dogList, setDogList] = useState([]);
 
-    useEffect(() => {
-        fetch('https://raigomessw.github.io/dogs.json/mydata.json')
-        .then(response => response.json())
-        .then(json => setDogList(json));
+  useEffect(() => {
+    getData();
+  },[]);
 
-        console.log(dogList);
+    const getData = async () => {
+        console.log("apiData: ", dogList);
+          
+          if(localStorage.getItem("savedApiData") === null) {
+            // localStorage.setItem("savedApiData", JSON.stringify([]));
     
-    }, []); 
+            const response = await fetch(
+              `https://raigomessw.github.io/dogs.json/mydata.json`
+            );
+            const dogList = await response.json();
+            setDogList(dogList);
+            localStorage.setItem("savedApiData", JSON.stringify(dogList));
+            console.log("saved apidata: ", dogList);
+    
+          } else {
+            let apiDataLocal = JSON.parse(localStorage.getItem("savedApiData"));
+            setDogList(apiDataLocal);
+            console.log("local Saved apiData: ", apiDataLocal);
+          }
+        };
 
-
+        
 
     let listContent = dogList.map((dog)=> {
       var sex = ""
@@ -31,32 +47,30 @@ function HeroListMain({setDog}) {
           sex = "\u2642"
       }
 
-      let present = "not present";
+      let present = "Not present";
       let presentIcon = "\u2715"
       if(dog.present) {
-          present = "present"
+          present = "Present"
           presentIcon = "\u2713"
       }
-
-
-      return ([
+     
+     return ((
           
-          <Link className="link" to="/dog-info">
-              <div key={dog.chipnumber} className="card" onClick={() => setDog(dog)}>
-                  <img  src={dog.img} alt="dog"></img>
-              
+           <Link key={dog.chipNumber} to={`/listdogs/${dog.chipNumber}>`}>
+              <div key={dog.chipNumber} className="card" onClick={() => setDog(dog)}>
+                  <img onClick  src={dog.img} alt="dog"></img>
                       <h3 className="name">{dog.name} {sex}</h3>
                       <p className="breed">{dog.breed}</p>
-                  
-                  <button className={dog.present ? "present" : "not-present"}>{presentIcon}</button>
+                      <p className="description">{dog.chipNumber}</p>
+                  <button className={dog.present ? "Present" : "Not-present"}>{presentIcon}</button>
                   <div className="present-text">{present}</div>
-              </div>
-          </Link>
+                </div>
+           </Link>
           
-      ]);   
+      ));   
   })
 
-  return ([
+  return ((
     <main key="list" className="hero-list">
       <video autoPlay loop muted id='video'>
             <source src={Video} type='video/mp4' />
@@ -71,7 +85,7 @@ function HeroListMain({setDog}) {
                 </div>
               </div>
     </main>
-])
+  ))
 }
 
 export default HeroListMain;

@@ -5,6 +5,7 @@ import {AiOutlineClose} from 'react-icons/ai'
 import {FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 import {Link} from 'react-scroll/'
 
+
 import './NavbarStyle.css' 
 
 
@@ -46,7 +47,9 @@ function Navbar() {
 
           <div className="mobile-menu-botton">
               <div className="menu-icons">
-              <button className="button">Våra Gänget!</button> 
+              <Link to="/listdogs" >
+                  <button>Våra Gänget!</button> 
+                </Link>
               </div>
 
               <div className="social-icons">
