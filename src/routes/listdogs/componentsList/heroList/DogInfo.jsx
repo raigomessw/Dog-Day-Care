@@ -1,26 +1,25 @@
 import React from 'react'
+import {useParams} from "react-router-dom";
 
-export const DogInfo = ({chipNumber}) => {
+export const DogInfo = () => {
   let apiDataLocal = JSON.parse(localStorage.getItem("savedApiData"));
+  let {chipNumber} = useParams();
 
-  console.log(apiDataLocal)
-
-  const myDog = {}
+  let myDog = {}
   for (const dog of apiDataLocal) {
     if (dog.chipNumber === chipNumber){
       myDog = dog
-    }
+    } 
   }
 
-  console.log(myDog)
-  console.log("local Saved apiData: ", apiDataLocal);
-
   return ([
-    <div>
-    <h2>hiiiis</h2>
-    <h1>{dog.name}</h1>
-    <img src={dog.img} alt="dog"></img>
+    <div class="card">
+       <header class="infoheader"> 
+            <img src={myDog.img} alt="dog"></img>
+            <h2>{myDog.name}</h2>
+        </header>
     </div>
+    
   ])
 }
 export default DogInfo;

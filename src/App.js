@@ -7,32 +7,23 @@ import DogInfo from './routes/listdogs/componentsList/heroList/DogInfo';
 
 function App() {
 
-    const [listItems, setListItem] = useState([])
-
-
-
-
     return ( <
-            main >
-            <
-            Routes >
-            <
-            Route exact path = "/"
-            element = { < Home / > }
-            />  <
-            Route exact path = "/listdogs"
-            element = { < Listdogs setDog = { setListItem }
-                />} /
-                >
-                <
-                Route exact path = "/listdogs/:chipNumber"
-                element = { < DogInfo dog = { listItems }
-                    /> } /
-                    >
-                    <
-                    /Routes >   <
-                    /main>
-                );
-            }
+        main >
+        <
+        Routes >
+        <
+        Route exact path = "/"
+        element = { < Home / > }
+        />  <
+        Route exact path = "/listdogs"
+        element = { < Listdogs / > }
+        /> <
+        Route exact path = "/listdogs/:chipNumber"
+        element = { < DogInfo / > }
+        />     <
+        /Routes >   <
+        /main>
+    );
+}
 
-            export default App;
+export default App;

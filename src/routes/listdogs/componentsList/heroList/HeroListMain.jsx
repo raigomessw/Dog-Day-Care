@@ -3,12 +3,7 @@ import './HeroListStyles.css'
 import {Link } from "react-router-dom";
 import Video from '../../../home/components/assets/back3.mp4'
 
-
-
-
-
-
-function HeroListMain({setDog}) {
+function HeroListMain() {
 
   const [dogList, setDogList] = useState([]);
 
@@ -56,8 +51,8 @@ function HeroListMain({setDog}) {
      
      return ((
           
-           <Link key={dog.chipNumber} to={`/listdogs/${dog.chipNumber}>`}>
-              <div key={dog.chipNumber} className="card" onClick={() => setDog(dog)}>
+           <Link key={dog.chipNumber} to={`/listdogs/${dog.chipNumber}`}>
+              <div key={dog.chipNumber} className="card">
                   <img onClick  src={dog.img} alt="dog"></img>
                       <h3 className="name">{dog.name} {sex}</h3>
                       <p className="breed">{dog.breed}</p>
@@ -89,3 +84,5 @@ function HeroListMain({setDog}) {
 }
 
 export default HeroListMain;
+
+
