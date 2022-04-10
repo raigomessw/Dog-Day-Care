@@ -10,6 +10,14 @@
     color: rgb(250, 245, 245);
 }
 
+Link a {
+    color: rgb(255, 255, 255);
+}
+
+Link a::hover {
+    color: rgb(255, 115, 0)
+}
+
 .dark {
     color: #000;
 }

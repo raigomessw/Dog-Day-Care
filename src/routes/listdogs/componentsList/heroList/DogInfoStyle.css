@@ -1,0 +1,66 @@
+.hero-info {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.overlay-list {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card-dog-info {
+    background-color: rgba(157, 158, 157, 0.863);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 8px rgb(247, 247, 247);
+    transition: .5s;
+    max-width: 700px;
+}
+
+img {
+    margin-left: 5px;
+    clear: both;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    background: linear-gradient(45deg, #fffb26, #c335fb) border-box;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+
+.content-listt {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.right,
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.card-dog-info ul {
+    display: relative;
+}
+
+.card-dog-info li {
+    padding: .2rem;
+}

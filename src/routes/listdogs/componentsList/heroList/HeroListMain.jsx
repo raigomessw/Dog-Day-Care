@@ -68,17 +68,17 @@ function HeroListMain() {
   return ((
     <main key="list" className="hero-list">
       <video autoPlay loop muted id='video'>
-            <source src={Video} type='video/mp4' />
-        </video>
+          <source src={Video} type='video/mp4' />
+      </video>
         <div className="overlay-list"></div>
              <div className="title2">
                 <h2>Våra Gänget!</h2>
               </div>
               <div className="content-list">
-               <div className="container-lista">
+              <div className="container-lista">
                   {listContent}
-                </div>
               </div>
+          </div>
     </main>
   ))
 }

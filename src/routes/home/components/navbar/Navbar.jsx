@@ -4,6 +4,7 @@ import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {AiOutlineClose} from 'react-icons/ai'
 import {FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 import {Link} from 'react-scroll/'
+import {Link as Element} from "react-router-dom";
 
 
 import './NavbarStyle.css' 
@@ -21,7 +22,6 @@ function Navbar() {
         <div className={nav ? "logo dark" : "logo"}>
             <h2>DOG DAY CARE.</h2>
         </div>
-
         <ul className="nav-menu">
             <Link to="home" smooth="true" duration={500}><li>Home</li></Link>
             <Link to="gallery" smooth="true" duration={500}><li>Gallery</li></Link>
@@ -34,24 +34,19 @@ function Navbar() {
 
         <div className="hamburger" onClick={handleNav}>
             {!nav ? (<HiOutlineMenuAlt4 className="icon" />) : (<AiOutlineClose style={{color: "#000"}} className="icon" />)}
-
-            
         </div>
-
         <div className={nav ? "mobile-menu active" : "mobile-menu"}>
           <ul className="mobile-nav">
            <Link to="home" smooth="true" duration={500}><li>Home</li></Link>
             <Link to="gallery" smooth="true" duration={500}><li>Gallery</li></Link>
             <Link to="info" smooth="true" duration={500}><li>Info</li></Link>
           </ul>
-
           <div className="mobile-menu-botton">
               <div className="menu-icons">
-              <Link to="/listdogs" >
+              <Element to="/listdogs" >
                   <button>Våra Gänget!</button> 
-                </Link>
+                </Element>
               </div>
-
               <div className="social-icons">
               <FaFacebook className="icon" />
               <FaInstagram className="icon" />
