@@ -10,11 +10,11 @@
     color: rgb(250, 245, 245);
 }
 
-Link a {
+li a {
     color: rgb(255, 255, 255);
 }
 
-Link a::hover {
+li a::hover {
     color: rgb(255, 115, 0)
 }
 

@@ -25,7 +25,7 @@ export const DogInfo = () => {
             <video autoPlay loop muted id='video'>
               <source src={Video} type='video/mp4' />
             </video>
-            <div className="overlay"></div>
+            <div className="overlay-info"></div>
         </header>
         <div className="">
             <main class="hero-info">
