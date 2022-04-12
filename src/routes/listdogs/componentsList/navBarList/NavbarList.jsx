@@ -18,8 +18,8 @@ function Navbar() {
 
   return (
     <div name="home" className={nav ? "navbar-list navbar-bg" : "navbar-list"}>
-        <div className={nav ? "logo dark" : "logo"}>
-        <Link to="/" className="link-logo" smooth="true" duration={500}><h2>DOG DAY CARE.</h2></Link>
+        <div className={nav ? "link dark" : "logo"}>
+          <Link to="/" className="dark" smooth="true" duration={500}><h2>DOG DAY CARE.</h2></Link>
         </div>
 
         <ul className="nav-menu">
