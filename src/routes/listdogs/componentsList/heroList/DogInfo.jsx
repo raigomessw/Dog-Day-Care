@@ -19,15 +19,18 @@ export const DogInfo = () => {
 
   return ([
 
-    <div class="">
-         <header class="header"> 
+    <div className="hero-info-dog">
+         <header className="headerr"> 
             <Navbar/>
             <video autoPlay loop muted id='video'>
               <source src={Video} type='video/mp4' />
             </video>
             <div className="overlay-info"></div>
+            <div className="title2-info">
+                <h2>DOG INFO</h2>
+              </div>
         </header>
-        <div className="">
+        <div className="content-listt">
             <main class="hero-info">
                 <div class="card-dog-info">
                   <img src={myDog.img} alt="dog"></img>

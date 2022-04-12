@@ -2,8 +2,8 @@
 :root {
     --primary-dark: #5651e5;
     --primary-light: #709dff;
-    --dark-dark: #000000;
-    --primary-withe: #ffffff;
+    --dark-dark: #f8f8f8b6;
+    --secundary-white: rgba(255, 255, 255, 0.685);
 }
 
 * {

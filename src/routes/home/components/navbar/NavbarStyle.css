@@ -14,6 +14,30 @@
     color: #000;
 }
 
+.logo,
+.link-homee,
+.link-gallery,
+.link-info {
+    color: rgb(255, 255, 255);
+}
+
+.link-homee:hover {
+    color: rgb(0, 0, 0);
+}
+
+.link-gallery:hover {
+    color: rgb(0, 0, 0);
+}
+
+.link-info:hover {
+    color: rgb(0, 0, 0);
+}
+
+.link-gallery:visited {
+    color: #0000ff;
+    text-decoration: none;
+}
+
 .navbar-bg {
     background-color: #ffffff;
 }

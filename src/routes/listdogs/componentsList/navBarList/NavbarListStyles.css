@@ -10,12 +10,18 @@
     color: rgb(250, 245, 245);
 }
 
-li a {
+.link-home,
+.link-dogs,
+.link-logo {
     color: rgb(255, 255, 255);
 }
 
-li a::hover {
-    color: rgb(255, 115, 0)
+.link-home :hover {
+    color: #657bf4;
+}
+
+.link-dogs :hover {
+    color: #657bf4;
 }
 
 .dark {

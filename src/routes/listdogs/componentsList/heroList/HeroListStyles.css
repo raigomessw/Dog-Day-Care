@@ -23,10 +23,13 @@
 }
 
 .title2 {
-    position: absolute;
-    top: 20vh;
+    position: relative;
+    top: -8rem;
+    margin-left: 16px;
     display: flex;
-    justify-content: space-around;
+    margin: 0 auto;
+    justify-content: center;
+    color: #fff;
 }
 
 .title2 h2 {
@@ -111,6 +114,12 @@
         transition: .5s;
         text-align: center;
         position: flex;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+    .title2 {
+        position: absolute;
+        top: 15vh;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
     }
 }

@@ -20,12 +20,12 @@ function Navbar() {
   return (
     <div name="home" className={nav ? "navbar navbar-bg" : "navbar"}>
         <div className={nav ? "logo dark" : "logo"}>
-            <h2>DOG DAY CARE.</h2>
+            <h2 className="logo">DOG DAY CARE.</h2>
         </div>
         <ul className="nav-menu">
-            <Link to="home" smooth="true" duration={500}><li>Home</li></Link>
-            <Link to="gallery" smooth="true" duration={500}><li>Gallery</li></Link>
-            <Link to="info" smooth="true" duration={500}><li>Info</li></Link>
+            <Link to="home" className="link-homee" smooth="true" duration={500}><li>Home</li></Link>
+            <Link to="gallery" className="link-gallery" smooth="true" duration={500}><li>Gallery</li></Link>
+            <Link to="info" className="link-info" smooth="true" duration={500}><li>Info</li></Link>
         </ul>
 
         <div className="nav-icons">
