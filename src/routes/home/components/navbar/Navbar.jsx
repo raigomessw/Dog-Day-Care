@@ -15,10 +15,22 @@ function Navbar() {
     const[nav, setNav] = useState(false)
     const handleNav = () => setNav(!nav)
 
+    const [color, setColor] = useState(false)
+    const changeColor =() => {
+      if(window.scrollY >= 100) {
+        setColor(true)
+      }else{
+        setColor(false)
+      }
+    }
+
+    window.addEventListener(`scroll`, changeColor)
+
 
 
   return (
-    <div name="home" className={nav ? "navbar navbar-bg" : "navbar"}>
+    <div className={color ? "navbar navbar-bg" : "navbar"}>
+      <div name="home" className={nav  ? "navbar navbar-bg" : "navbar"}>
         <div className={nav ? "logo dark" : "logo"}>
             <h2 className="">DOG DAY CARE.</h2>
         </div>
@@ -55,7 +67,7 @@ function Navbar() {
           </div>
 
         </div>
-        
+      </div>
     </div>
   )
 }

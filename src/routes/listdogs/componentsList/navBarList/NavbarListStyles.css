@@ -1,27 +1,32 @@
 .navbar-list {
     width: 100%;
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
     z-index: 10;
-    position: absolute;
-    color: rgb(250, 245, 245);
+    position: fixed;
+    color: rgb(3, 6, 148);
+}
+
+.navbar-bg {
+    background-color: rgba(0, 0, 0, 0.562);
+    transition: .5s;
 }
 
 .link-home,
 .link-dogs,
 .link-logo {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .link-home :hover {
-    color: #657bf4;
+    color: #000877;
 }
 
 .link-dogs :hover {
-    color: #657bf4;
+    color: #000875;
 }
 
 .dark {
