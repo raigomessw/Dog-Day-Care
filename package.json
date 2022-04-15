@@ -2,7 +2,7 @@
     "name": "dog-day-care",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://raigomessw.github.io/Dog-Day-Care-V2",
+    "homepage": "http://raigomessw.github.io/Dog-Day-Care",
 
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.3",
