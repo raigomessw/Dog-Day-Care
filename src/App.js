@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Routes, Route } from 'react-router-dom';
 import Home from './routes/home/Home';
 import Listdogs from './routes/listdogs/Listdogs';
 import DogInfo from './routes/listdogs/componentsList/heroList/DogInfo';
@@ -20,8 +20,8 @@ function App() {
         /> <
         Route exact path = "/listdogs/:chipNumber"
         element = { < DogInfo / > }
-        />     <
-        /Routes >   <
+        />     < /
+        Routes > <
         /main>
     );
 }
