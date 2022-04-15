@@ -2,14 +2,16 @@ import React, { useState, useEffect } from 'react'
 import './HeroListStyles.css'
 import {Link } from "react-router-dom";
 import Video from '../../../home/components/assets/back3.mp4'
+import {AiOutlineSearch} from "react-icons/ai";
 
 function HeroListMain() {
 
   const [dogList, setDogList] = useState([]);
+  const [searchInputText, setSearchInputText] = useState("");
 
   useEffect(() => {
     getData();
-  },[]);
+  },[searchInputText]);
 
     const getData = async () => {
         console.log("apiData: ", dogList);
@@ -32,6 +34,24 @@ function HeroListMain() {
           }
         };
 
+        /*const clearNameInputField = () => {
+          setSearchInputText("");
+        };
+  
+        const searchInputName = (e) => {
+          let dogName = [];
+          clearNameInputField();
+          apiDataLocal.forEach((input) => {
+            if (input.name.startsWith(e.target.value)) {
+              setNameInputText(e.target.value);
+              dogName.push(input);
+            }
+          });
+          setDogs(dogName);
+        };*/
+  
+
+
         
 
     let listContent = dogList.map((dog)=> {
@@ -48,6 +68,9 @@ function HeroListMain() {
           present = "Present"
           presentIcon = "\u2713"
       }
+
+      
+      
      
      return ((
           
@@ -71,9 +94,17 @@ function HeroListMain() {
           <source src={Video} type='video/mp4' />
       </video>
         <div className="overlay-list"></div>
-             <div className="title2">
+              <div className="title2">
                 <h2>Våra Gänget!</h2>
               </div>
+              {/*<forme className='form-search'>
+                 <div>
+                 <input className="bg-transparent" type="text" placeholder="Sök Dog Name" onChange={searchInputName} />
+                 </div>
+                  <div>
+                  <button><AiOutlineSearch size={20} className="icon"/></button>
+                  </div>
+                   </forme>*/}
               <div className="content-list">
               <div className="container-lista">
                   {listContent}
