@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dog-Day-Care/static/css/main.0132e223.css",
-    "main.js": "/Dog-Day-Care/static/js/main.0d46bcba.js",
+    "main.js": "/Dog-Day-Care/static/js/main.1a386d29.js",
     "static/media/back3.mp4": "/Dog-Day-Care/static/media/back3.77f45db39c0223b8f532.mp4",
     "static/media/back2.mp4": "/Dog-Day-Care/static/media/back2.bc4e81899926ab3b1b0e.mp4",
     "static/media/backgrund.mp4": "/Dog-Day-Care/static/media/backgrund.e3c54af46e82e27bd756.mp4",
@@ -12,10 +12,10 @@
     "static/media/care.jpg": "/Dog-Day-Care/static/media/care.c85521020d2c2d9ca602.jpg",
     "index.html": "/Dog-Day-Care/index.html",
     "main.0132e223.css.map": "/Dog-Day-Care/static/css/main.0132e223.css.map",
-    "main.0d46bcba.js.map": "/Dog-Day-Care/static/js/main.0d46bcba.js.map"
+    "main.1a386d29.js.map": "/Dog-Day-Care/static/js/main.1a386d29.js.map"
   },
   "entrypoints": [
     "static/css/main.0132e223.css",
-    "static/js/main.0d46bcba.js"
+    "static/js/main.1a386d29.js"
   ]
 }
