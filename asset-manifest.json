@@ -1,21 +1,21 @@
 {
-  "main.css": "/Dog-Day-Care-V2/static/css/main.77d7049a.chunk.css",
-  "main.js": "/Dog-Day-Care-V2/static/js/main.fc3f228e.chunk.js",
-  "main.js.map": "/Dog-Day-Care-V2/static/js/main.fc3f228e.chunk.js.map",
-  "static/js/1.3e0bcebd.chunk.js": "/Dog-Day-Care-V2/static/js/1.3e0bcebd.chunk.js",
-  "static/js/1.3e0bcebd.chunk.js.map": "/Dog-Day-Care-V2/static/js/1.3e0bcebd.chunk.js.map",
-  "runtime~main.js": "/Dog-Day-Care-V2/static/js/runtime~main.e382fedb.js",
-  "runtime~main.js.map": "/Dog-Day-Care-V2/static/js/runtime~main.e382fedb.js.map",
-  "static/media/backgrund.mp4": "/Dog-Day-Care-V2/static/media/backgrund.d3e4a4b8.mp4",
-  "static/media/dog.jpg": "/Dog-Day-Care-V2/static/media/dog.862e69ec.jpg",
-  "static/media/care.jpg": "/Dog-Day-Care-V2/static/media/care.3d6e40e2.jpg",
-  "static/media/dog2.jpg": "/Dog-Day-Care-V2/static/media/dog2.dc02ccd6.jpg",
-  "static/media/dog3.jpg": "/Dog-Day-Care-V2/static/media/dog3.9f105d1e.jpg",
-  "static/media/dog4.jpg": "/Dog-Day-Care-V2/static/media/dog4.af8bb4db.jpg",
-  "static/media/back3.mp4": "/Dog-Day-Care-V2/static/media/back3.a4daef0b.mp4",
-  "static/media/back2.mp4": "/Dog-Day-Care-V2/static/media/back2.98546e8b.mp4",
-  "static/css/main.77d7049a.chunk.css.map": "/Dog-Day-Care-V2/static/css/main.77d7049a.chunk.css.map",
-  "index.html": "/Dog-Day-Care-V2/index.html",
-  "precache-manifest.45be001d72f92b5544a3e8ec5926fbbf.js": "/Dog-Day-Care-V2/precache-manifest.45be001d72f92b5544a3e8ec5926fbbf.js",
-  "service-worker.js": "/Dog-Day-Care-V2/service-worker.js"
+  "files": {
+    "main.css": "/Dog-Day-Care-V2/static/css/main.0132e223.css",
+    "main.js": "/Dog-Day-Care-V2/static/js/main.bdeb6d8f.js",
+    "static/media/back3.mp4": "/Dog-Day-Care-V2/static/media/back3.77f45db39c0223b8f532.mp4",
+    "static/media/back2.mp4": "/Dog-Day-Care-V2/static/media/back2.bc4e81899926ab3b1b0e.mp4",
+    "static/media/backgrund.mp4": "/Dog-Day-Care-V2/static/media/backgrund.e3c54af46e82e27bd756.mp4",
+    "static/media/dog2.jpg": "/Dog-Day-Care-V2/static/media/dog2.8e07ca5b5ee0116ad2ba.jpg",
+    "static/media/dog4.jpg": "/Dog-Day-Care-V2/static/media/dog4.a28b1e3788394fa50173.jpg",
+    "static/media/dog.jpg": "/Dog-Day-Care-V2/static/media/dog.121d3ff734d4cd34608e.jpg",
+    "static/media/dog3.jpg": "/Dog-Day-Care-V2/static/media/dog3.76f7cf12be6ee6fc0859.jpg",
+    "static/media/care.jpg": "/Dog-Day-Care-V2/static/media/care.c85521020d2c2d9ca602.jpg",
+    "index.html": "/Dog-Day-Care-V2/index.html",
+    "main.0132e223.css.map": "/Dog-Day-Care-V2/static/css/main.0132e223.css.map",
+    "main.bdeb6d8f.js.map": "/Dog-Day-Care-V2/static/js/main.bdeb6d8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0132e223.css",
+    "static/js/main.bdeb6d8f.js"
+  ]
 }
