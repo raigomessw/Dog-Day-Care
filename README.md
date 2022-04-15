@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 
 
-/**https://raigomessw.github.io/dogs.json/mydata.json*/
+
 
 ### `npm start`
 
