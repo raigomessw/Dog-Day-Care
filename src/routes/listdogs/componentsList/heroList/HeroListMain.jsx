@@ -7,11 +7,11 @@ import {AiOutlineSearch} from "react-icons/ai";
 function HeroListMain() {
 
   const [dogList, setDogList] = useState([]);
-  const [searchInputText, setSearchInputText] = useState("");
+  /*const [searchInputText, setSearchInputText] = useState("");*/
 
   useEffect(() => {
     getData();
-  },[searchInputText]);
+  },[]);
 
     const getData = async () => {
         console.log("apiData: ", dogList);
